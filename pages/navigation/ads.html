@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Ursa</title>
+    <link rel="stylesheet" href="../../assets/css/all-style.css">
+
+    <script src="../../assets/js/index.js"></script>
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="everything-header">
+            <button class="header-burger" id="burger-btn">
+                <span></span><span></span><span></span>
+            </button>
+            <div id="logo">
+                <a href="../../index.html">
+                    <img class="iconlogo" src="../../assets/images/logo.png" title="Ursa.com" alt="Ursa.com">
+                    <img class="textlogo" src="../../assets/images/text-ursa.png" title="На главную страницу" alt="Ursa">
+                </a>
+            </div>
+            <div id="search-menu">
+                <form action="" method="get">
+                    <input type="text" id="search-txt" placeholder="Поиск">
+                    <img src="../../assets/images/search-btn.png" id="search-btn">
+                </form>
+            </div>
+            <div id="register">
+                <a href="../registration/singup.html">
+                    <button class="reg-btn">Регистрация</button>
+                </a>
+            </div>
+            <div class="burger">
+                <ul>
+                    <li><a href="technology.html">Техника</a></li>
+                    <li><a href="ads.html">Разместить объявление</a></li>
+                    <li><a href="../registration/singup.html">Регистрация</a></li>
+                    <li><a href="../registration/singin.html">Войти</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="topnav">
+            <a href="technology.html">Техника</a>
+            <a href="ads.html">Разместить объявление</a>
+        </div>
+    </nav>
+
+    <main class="main-ads">
+        <form action="">
+            <div class="blank-ads-1">
+                <p>ЗАПРОСИТЬ ЦЕНЫ НА УСЛУГИ URSA</p>
+            </div>
+            <div>
+                <p class="text-in-blank-ads">Ваше имя или название компании</p>
+                <input class="blank-ads blank-ads-2" required type="text">
+            </div>
+            <div>
+                <p class="text-in-blank-ads">Ваш Email *</p>
+                <input class="blank-ads blank-ads-3" required type="email">
+            </div>
+            <div>
+                <p class="text-in-blank-ads">Ваш номер телефона с кодом страны</p>
+                <input class="blank-ads blank-ads-3" required type="tel">
+            </div>
+            <div>
+                <p class="text-in-blank-ads">Пакет</p>
+                <select class="blank-ads blank-ads-3" required name="paket" id="paket">
+                    <option value selected></option>
+                    <option value="10">До 10 объявлений</option>
+                    <option value="50">10 - 50 объявлений</option>
+                    <option value="100">50 - 100 объявлений</option>
+                    <option value="200">100 - 200 объявлений</option>
+                    <option value="500">200 - 500 объявлений</option>
+                    <option value="500+">Более 500 объявлений</option>
+                </select>
+            </div>
+            <div>
+                <input id="price" name="price" type="checkbox">
+                <label class="text-in-blank-ads" for="price">Запросить цены на баннеры</label>
+            </div>
+            <div>
+                <p class="text-in-blank-ads">Опишите ваши требования</p>
+                <textarea class="blank-ads-4" required cols="80" rows="6"></textarea>
+            </div>
+            <div>
+                <button>Получить цены</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="everything-footer">
+            <div class="col-1">
+                <div id="logo-in-footer">
+                    <a href="../../index.html">
+                        <img class="iconlogo" src="../../assets/images/logo.png" title="Ursa.com" alt="Ursa.com">
+                        <img class="textlogo" src="../../assets/images/text-ursa.png" title="На главную страницу" alt="Ursa">
+                    </a>
+                </div>
+                <p>Онлайн магазин
+                    <br> строительной техники</p>
+            </div>
+            <div class="col-2">
+                <h3>Ссылки</h3>
+                <a href="../links/aboutus.html">О нас</a>
+                <a href="../registration/singin.html">Войти</a>
+                <a href="../registration/singup.html">Регистрация</a>
+                <a href="../links/termsofuse.html">Условия использования</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

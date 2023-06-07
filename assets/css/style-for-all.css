@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 3%;
+    display: block;
+}
+
+header,
+footer {
+    width: 75%;
+    height: 70px;
+    border-bottom: 4px solid silver;
+    background: #333;
+    line-height: 70px;
+    float: left;
+    color: #fafafa;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+.everything-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    margin-top: 15px;
+    z-index: 2;
+}
+
+.header-burger span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fafafa;
+    border-radius: 1.5px;
+    margin-left: -15px;
+    transition: transform .5s, opacity .5s;
+}
+
+.header-burger span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header-burger span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.container.open .header-burger span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.container.open .header-burger span:nth-child(2) {
+    opacity: 0;
+}
+
+.container.open .header-burger span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+#logo {
+    display: inline;
+}
+
+#logo>a {
+    max-width: 100%;
+}
+
+.iconlogo {
+    width: 70px;
+}
+
+.textlogo {
+    height: 70px;
+}
+
+#search-menu {
+    position: relative;
+    width: 352px;
+    margin: auto 0;
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+#search-txt {
+    width: 300px;
+    float: left;
+    height: 38px;
+    padding-left: 10px;
+    border: 2px solid #bbbbbb;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    background: #f1f1f1;
+    color: #2a2a2a;
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+#search-btn {
+    margin-left: 50px;
+    padding: 5px;
+    position: absolute;
+    right: 0px;
+    width: 30px;
+    height: 31px;
+    border: none;
+    background: #b7b7b7;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    margin-top: -15px;
+}
+
+#search-btn:hover {
+    background: #e6e6e6;
+    border-right: 2px solid #e4e447;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+}
+
+.reg-btn {
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    background: #fafafa;
+    color: #333;
+    border: 2px solid #fafafa;
+    width: 170px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.reg-btn:hover {
+    color: #fafafa;
+    background: #333;
+}
+
+.burger {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+    line-height: 40px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    border-bottom: 1px solid silver;
+    margin-bottom: 50px;
+    background-color: #fafafa;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 350px;
+}
+
+.topnav a {
+    color: #919090;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    color: #e8753f;
+}
+
+main {
+    width: 50%;
+    margin-left: 25%;
+    padding: 20px 2.5%;
+}
+
+.main-index {
+    width: 75%;
+    margin-left: 10%;
+    padding: 20px 0;
+}
+
+.main-aboutus {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.main-aboutus p {
+    margin-bottom: 5%;
+    font-size: 200%;
+    font-weight: 700;
+}
+
+.main-termsofuse p {
+    margin-bottom: 5%;
+    font-size: 180%;
+}
+
+.main-termsofuse li {
+    color: #525252;
+}
+
+.main-ads div {
+    margin-bottom: 5%;
+}
+
+.main-ads button {
+    height: 50px;
+    width: 300px;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: #e8753f;
+    color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-ads button:hover {
+    background: #c8673a;
+}
+
+.main-login {
+    width: 95%;
+    margin-left: 0;
+    padding: 40px 2.5%;
+    text-align: center;
+}
+
+.main-forgot {
+    padding: 40px 2.5%;
+    text-align: center;
+}
+
+.texttechno {
+    font-size: 200%;
+    display: block;
+    justify-content: center;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.price {
+    text-align: right;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.price-mobile {
+    display: none;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.col-main-1 {
+    text-align: center;
+}
+
+.col-main-1 h2 {
+    color: #454545;
+    margin-bottom: 2.5%;
+}
+
+.post-1,
+.post-2,
+.post-3 {
+    width: 100%;
+    margin: -2px;
+    border-bottom: 4px solid #2e2e2e;
+}
+
+.post-1 {
+    border-top: 4px solid #2e2e2e;
+}
+
+.post-3 {
+    margin-bottom: 12.3%;
+}
+
+.col-main-2 h2 {
+    color: #2e2e2e;
+    margin-bottom: 2.5%;
+}
+
+.corpus2 {
+    width: 400px;
+}
+
+.corpus3 {
+    width: 150px;
+}
+
+.techno {
+    height: 100px;
+    margin-right: 15px;
+}
+
+.techname a {
+    color: #212121;
+    font-size: large;
+}
+
+.techname a:hover {
+    text-decoration: underline;
+}
+
+.techinfo {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.blank {
+    width: 50%;
+}
+
+.blank1 {
+    float: left;
+    font-size: 120%;
+}
+
+.blank2 {
+    float: right;
+    margin-top: -100px;
+}
+
+.text-in-blank-ads {
+    color: #646464;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 0.8%;
+}
+
+.blank-ads {
+    height: 41px;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.blank-ads-1 p {
+    font-size: 200%;
+    font-weight: 700;
+    color: #424242;
+}
+
+.blank-ads-2 {
+    width: 600px;
+}
+
+.blank-ads-3 {
+    width: 220px;
+}
+
+.blank-ads-4 {
+    padding: 15px 15px;
+    font-size: 15px;
+}
+
+#registration {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#registration table {
+    background: #eeeeee;
+    height: 530px;
+    width: 600px;
+    border: 1px solid #d0d0d0;
+    padding: 0 20px;
+}
+
+#registration p,
+#registration label {
+    font-size: 13px;
+    font-weight: bolder;
+    color: #727272;
+}
+
+#registration button {
+    padding: 10px;
+    background-color: #e8753f;
+    border: 0;
+    border-radius: 5px;
+    color: #eeeeee;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#registration button:hover {
+    background-color: #a0522e;
+}
+
+.regis-text {
+    color: #333;
+    font-size: 170%;
+    font-weight: bold;
+    padding: 11px 15px 5px;
+    border-bottom: 3px dotted #727272;
+}
+
+.regis-input {
+    height: 35px;
+    width: 250px;
+}
+
+.loginfo p {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: #5f5f5f;
+}
+
+.loginfo a {
+    color: #e8753f;
+}
+
+.loginfo a:hover {
+    color: #b96037;
+}
+
+.logemail input {
+    height: 66px;
+    width: 460px;
+    padding: 0 20px;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    border: 2px solid silver;
+    font-size: 18px;
+    color: #727272;
+}
+
+.logpass input {
+    height: 66px;
+    width: 460px;
+    padding: 0 20px;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    border: 2px solid silver;
+    font-size: 18px;
+    color: #727272;
+}
+
+.logforg a {
+    color: #727272;
+}
+
+.logforg a:hover {
+    text-decoration: underline;
+}
+
+.login button {
+    margin-top: 3%;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: #e8753f;
+    color: #e6e6e6;
+    font-weight: bolder;
+    border: 0;
+    cursor: pointer;
+}
+
+.send-pass button {
+    width: 250px;
+}
+
+.login button:hover {
+    background-color: #b96037;
+}
+
+footer {
+    flex: 0 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: 0;
+    border-top: 4px solid silver;
+    height: 180px;
+}
+
+.everything-footer {
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.col-1>p {
+    line-height: 170%;
+    text-align: center;
+}
+
+#logo-in-footer {
+    cursor: pointer;
+}
+
+.col-2 a {
+    display: block;
+    text-decoration: none;
+    height: 35px;
+    line-height: 170%;
+    color: #b4aaaa;
+}
+
+.col-2 a:hover {
+    text-decoration: underline;
+}
+
+footer div {
+    text-align: center;
+}

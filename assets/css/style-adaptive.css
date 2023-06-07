@@ -1,0 +1,134 @@
+@media screen and (max-width: 1100px) {
+    .header-burger {
+        display: block;
+    }
+    #search-menu,
+    #register {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .burger {
+        position: absolute;
+        display: block;
+        top: -460px;
+        font-size: 20px;
+        background-color: #333;
+        padding: 70px 20px 10px 20px;
+        transition: transform .5s;
+    }
+    .burger a {
+        color: #fafafa;
+        display: block;
+        padding: 10px 0;
+    }
+    .container.open .burger {
+        transform: translateY(100%);
+    }
+    .blank-ads-1 {
+        text-align: center;
+    }
+    .blank-ads-2 {
+        width: 400px;
+    }
+    .blank-ads-4 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .everything-footer {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .main-techno {
+        width: 84%;
+        margin-left: 10%;
+    }
+    .main-signup {
+        width: 85%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    header,
+    footer {
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 94%;
+    }
+    .main-index {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-aboutus {
+        width: 95%;
+        margin-left: 0;
+    }
+    .main-termsofuse {
+        width: 95%;
+        margin-left: 0;
+    }
+    .main-forgot {
+        width: 95%;
+        margin-left: 0;
+    }
+    .main-ads {
+        width: 95%;
+        margin-left: 0;
+    }
+    .blank-ads-2 {
+        width: 250px;
+    }
+    .blank-ads-4 {
+        width: 250px;
+    }
+    .col-main-2 {
+        margin-left: 10%;
+    }
+    .blank2 img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .price {
+        display: none;
+    }
+    .price-mobile {
+        display: block;
+    }
+    .technology {
+        border-bottom: #333;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .blank2 {
+        display: none;
+    }
+    .main-aboutus {
+        justify-content: space-between;
+    }
+    #registration td {
+        display: block;
+    }
+    #registration table {
+        width: 95%;
+    }
+    .logemail input,
+    .logpass input {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .col-1 {
+        display: none;
+    }
+    .everything-footer {
+        justify-content: center;
+    }
+}
